@@ -16,6 +16,7 @@ html,body {
   width: 100%;
   height: 10px;
   background-color: #fff;
+  z-index: 1;
 }
 
 .scroll-bar {
@@ -35,4 +36,28 @@ html,body {
   width: 100%;
   height: 600px;
   background-color: #f4f4f4;
+}
+
+.main-wrap>svg {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+path {
+  stroke-dasharray : 5000;
+  stroke-dashoffset : 5000;
+  transition: 6s linear;
+  animation: myani 6s infinite;
+}
+
+@keyframes myani {
+
+  50% {
+    stroke-dashoffset:0;
+  }
+
+  100% {
+    stroke-dashoffset:6000;
+  }
+
 }
