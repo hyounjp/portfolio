@@ -1,0 +1,48 @@
+@media screen and (max-width: 1280px) {
+  .about-profile .photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    background-color: #000;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .about-profile {
+    flex-direction: column;
+  }
+
+  .about-profile .photo {
+    margin-bottom: 30px;
+  }
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+
+  .wrap-about{
+    flex-direction: column;
+    padding:15px;
+  }
+
+  .about-intro{
+    padding:15px;
+  }
+
+  .about-inner:nth-child(1) {
+    margin:0;
+  }
+
+  .about-profile,.about-profile:nth-child(1) {
+    margin-bottom:15px;
+  }
+
+}
