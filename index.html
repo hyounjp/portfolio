@@ -16,7 +16,7 @@
   <link rel="stylesheet" media="screen" href="css/font.css">
   <link rel="stylesheet" media="screen" href="css/style.css">
   <link rel="stylesheet" media="screen" href="css/style-responsive.css">
-  <script src="js/jquery.3.2.1.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
@@ -263,7 +263,10 @@
         </div>
       </div>
     </div>
-    <div class="about-inner boxstyle">
+    <div class="about-intro boxstyle">
+      <div class="about-title">
+        SKILLS
+      </div>
     </div>
   </div>
 
@@ -273,6 +276,16 @@
       var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       var scrolled = (winScroll / height) * 100;
       document.getElementById("scroll_bar").style.width = scrolled + "%";
+
+      if( winScroll > $(".boxstyle").offset().top/2 ){
+        $(".boxstyle").addClass("active");
+      }
+      /*
+      else{
+        $(".boxstyle").removeClass("active");
+      }
+      */
+      
     };
   </script>
 </body>
